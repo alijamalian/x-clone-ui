@@ -106,7 +106,18 @@ const LeftBar = () => {
 				</Link>
 			</div>
 			{/* USER */}
-			<div className="">USER</div>
+			<div className="flex items-center justify-between">
+				<div className="flex items-center gap-2">
+					<div className="w-10 h-10 relative rounded-full overflow-hidden">
+						<Image src="/general/avatar.png" alt="lama dev" fill />
+					</div>
+					<div className="hidden xxl:flex flex-col">
+						<span className="font-bold ">Lama Dev</span>
+						<span className="text-sm text-textGray">@lamadev</span>
+					</div>
+				</div>
+				<div className="hidden xxl:block cursor-pointer font-bold">. . .</div>
+			</div>
 		</div>
 	)
 }
